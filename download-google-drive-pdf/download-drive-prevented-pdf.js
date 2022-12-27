@@ -8,7 +8,6 @@
       for (let i in elements) {
         let img = elements[i];
         if (!/^blob:/.test(img.src)) {
-          console.log('invalid src');
           continue;
         }
         let can = document.createElement('canvas');
